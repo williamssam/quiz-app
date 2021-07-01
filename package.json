@@ -1,0 +1,16 @@
+{
+    "name": "quiz-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "Williams Samuel",
+    "license": "ISC",
+    "homepage": "https://williamssam.gihub.io/quz-app",
+    "dependencies": {
+        "gh-pages": "^3.2.3"
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/facebook/230/smiling-face-with-sunglasses_1f60e.png"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <title>Quiz App</title>
+    </head>
+    <body>
+        <section class="section">
+            <div class="questions" id="questions">
+                <div class="progress-bar">
+                    <progress id="progress-bar" max="16" value="0">0</progress>
+                    <label for="quiz">Quiz</label>
+                </div>
+
+                <!-- quiz will be inserted here -->
+                <div class="quiz-section" id="quiz-section"></div>
+            </div>
+
+            <div class="btn-container" id="btn-container">
+                <!-- <button type="button" class="btn" id="prev">
+                    Previous Question
+                </button> -->
+                <button type="button" class="btn" id="next">
+                    Next Question
+                </button>
+                <button type="button" class="btn hide-btn" id="submit">
+                    Submit Quiz
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with 😍 by <strong>Williams Samuel 😎</strong></p>
+            <p>
+                Follow me on
+                <a href="https://twitter.com/williams_codes">Twitter</a>
+            </p>
+        </footer>
+
+        <script src="./js/main.js" type="module"></script>
+    </body>
+</html>

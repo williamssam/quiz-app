@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+/* change text selection bg color and text color */
+::selection {
+    background: #4370e7;
+    color: #fff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0f0f0f;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    max-width: 90vw;
+    width: 400px;
+
+    border-radius: 8px;
+    box-shadow: 0 0px 3.9px rgba(0, 0, 0, 0.001),
+        0 0px 7.2px rgba(0, 0, 0, 0.004), 0 0px 10.3px rgba(0, 0, 0, 0.008),
+        0 0px 13.6px rgba(0, 0, 0, 0.015), 0 0px 17.8px rgba(0, 0, 0, 0.024),
+        0 0px 24.6px rgba(0, 0, 0, 0.04), 0 0px 42px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.section::after {
+    position: absolute;
+    content: 'quiz app';
+    top: 3rem;
+    right: 1rem;
+    writing-mode: vertical-rl;
+    font-size: 8rem;
+    font-weight: 900;
+    opacity: 0.1;
+    line-height: 1;
+    z-index: -1;
+}
+
+.questions {
+    padding: 3rem;
+}
+
+.header h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.header h2 span {
+    font-weight: 600;
+}
+
+.header h1 {
+    padding-top: 0.5rem;
+    line-height: 1.3;
+}
+
+article {
+    padding-top: 2rem;
+}
+
+article div:not(:first-child) {
+    padding-top: 1.3rem;
+}
+
+.btn-container {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    all: unset;
+    background: #4370e7;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #f3f3fb;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #1447d1;
+}
+
+.btn:active {
+    background: #0639c4;
+}
+
+/* only shows when keyboard is being used */
+/* .btn:focus-visible {
+    outline: 2px solid #0639c4;
+    outline-offset: 2px;
+} */
+
+/* progress bar */
+.progress-bar label {
+    display: none;
+}
+
+progress {
+    width: 100%;
+    border: 0;
+}
+
+/* score section */
+.score-div {
+    text-align: center;
+}
+
+.score-div img {
+    width: 100%;
+}
+
+.score-div div {
+    margin-top: 2rem;
+}
+.score-div h3 {
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* misc */
+.hide-btn {
+    display: none;
+}
